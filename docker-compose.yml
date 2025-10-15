@@ -10,6 +10,7 @@ services:
       - geminiAPI=${geminiAPI}
       - clientId=${clientId}
       - guildId=${guildId}
+      - status=${status}
       - dataDir=/data
     volumes:
       - ./data:/data

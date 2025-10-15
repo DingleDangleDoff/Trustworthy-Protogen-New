@@ -63,7 +63,7 @@ client.on("ready", () => {
     client.user.setActivity({
         type: ActivityType.Custom,
         name: 'status',
-        state: "Getting worked on so if I don't respond, just try again later"
+        state: statusMessage
     })
 });
 

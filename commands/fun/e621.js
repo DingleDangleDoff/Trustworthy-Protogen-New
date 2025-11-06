@@ -19,7 +19,7 @@ slashCommand["contexts"] = [0, 1, 2];
 export const data = slashCommand;
 export async function execute(interaction) {
     {
-        axios.get(`https://e621.net/posts.json?tags=${interaction.options.getString('tags')}`, { headers: { 'User-Agent': 'e6-f/1.0' } })
+        axios.get(`https://e621.net/posts.json?tags=order%3Arandom+${interaction.options.getString('tags')}`, { headers: { 'User-Agent': 'e6-f/1.0' } })
             .then(response => {
                 let posts = response.data["posts"];
 
